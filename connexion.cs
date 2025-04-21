@@ -36,6 +36,7 @@ namespace ProjetGroupe10
                     var result = con.Connect();
                     if(result)
                     {
+                        this.Close();
                         MessageBox.Show("Connexion réussis", "Alerte", MessageBoxButtons.OK, MessageBoxIcon.None);
 
                     }

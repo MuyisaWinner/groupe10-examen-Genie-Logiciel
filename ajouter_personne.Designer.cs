@@ -31,36 +31,36 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             groupBox1 = new GroupBox();
-            comboBox1 = new ComboBox();
+            cbSexe = new ComboBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
+            txtPrenom = new TextBox();
+            txtPost = new TextBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtNom = new TextBox();
             groupBox2 = new GroupBox();
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
-            textBox8 = new TextBox();
-            textBox7 = new TextBox();
+            txtVille = new TextBox();
+            txtCommune = new TextBox();
             label7 = new Label();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
+            txtQuartier = new TextBox();
+            txtAvenue = new TextBox();
             label6 = new Label();
-            textBox4 = new TextBox();
+            txtNumero = new TextBox();
             groupBox3 = new GroupBox();
             label12 = new Label();
             label11 = new Label();
-            textBox10 = new TextBox();
-            textBox9 = new TextBox();
+            txtNumeroTel = new TextBox();
+            txtCode = new TextBox();
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
-            button1 = new Button();
+            btnSaveClose = new Button();
             pictureBox2 = new PictureBox();
-            button2 = new Button();
+            btnSave = new Button();
             pictureBox3 = new PictureBox();
-            button3 = new Button();
+            btnClose = new Button();
             pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
@@ -93,14 +93,14 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(cbSexe);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(txtPrenom);
+            groupBox1.Controls.Add(txtPost);
             groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtNom);
             groupBox1.Location = new Point(35, 119);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(250, 220);
@@ -108,14 +108,14 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Identité";
             // 
-            // comboBox1
+            // cbSexe
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "MASCULIN", "FEMININ" });
-            comboBox1.Location = new Point(95, 127);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(147, 28);
-            comboBox1.TabIndex = 2;
+            cbSexe.FormattingEnabled = true;
+            cbSexe.Items.AddRange(new object[] { "MASCULIN", "FEMININ" });
+            cbSexe.Location = new Point(95, 127);
+            cbSexe.Name = "cbSexe";
+            cbSexe.Size = new Size(147, 28);
+            cbSexe.TabIndex = 2;
             // 
             // label5
             // 
@@ -144,19 +144,19 @@
             label3.TabIndex = 1;
             label3.Text = "Post Nom";
             // 
-            // textBox3
+            // txtPrenom
             // 
-            textBox3.Location = new Point(95, 94);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(149, 27);
-            textBox3.TabIndex = 0;
+            txtPrenom.Location = new Point(95, 94);
+            txtPrenom.Name = "txtPrenom";
+            txtPrenom.Size = new Size(149, 27);
+            txtPrenom.TabIndex = 0;
             // 
-            // textBox2
+            // txtPost
             // 
-            textBox2.Location = new Point(95, 61);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(149, 27);
-            textBox2.TabIndex = 0;
+            txtPost.Location = new Point(95, 61);
+            txtPost.Name = "txtPost";
+            txtPost.Size = new Size(149, 27);
+            txtPost.TabIndex = 0;
             // 
             // label2
             // 
@@ -167,25 +167,25 @@
             label2.TabIndex = 1;
             label2.Text = "Nom";
             // 
-            // textBox1
+            // txtNom
             // 
-            textBox1.Location = new Point(95, 26);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(149, 27);
-            textBox1.TabIndex = 0;
+            txtNom.Location = new Point(95, 26);
+            txtNom.Name = "txtNom";
+            txtNom.Size = new Size(149, 27);
+            txtNom.TabIndex = 0;
             // 
             // groupBox2
             // 
             groupBox2.Controls.Add(label10);
             groupBox2.Controls.Add(label9);
             groupBox2.Controls.Add(label8);
-            groupBox2.Controls.Add(textBox8);
-            groupBox2.Controls.Add(textBox7);
+            groupBox2.Controls.Add(txtVille);
+            groupBox2.Controls.Add(txtCommune);
             groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(textBox6);
-            groupBox2.Controls.Add(textBox5);
+            groupBox2.Controls.Add(txtQuartier);
+            groupBox2.Controls.Add(txtAvenue);
             groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(textBox4);
+            groupBox2.Controls.Add(txtNumero);
             groupBox2.Location = new Point(303, 119);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(263, 220);
@@ -220,19 +220,19 @@
             label8.TabIndex = 1;
             label8.Text = "Quartier";
             // 
-            // textBox8
+            // txtVille
             // 
-            textBox8.Location = new Point(104, 165);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(149, 27);
-            textBox8.TabIndex = 0;
+            txtVille.Location = new Point(104, 165);
+            txtVille.Name = "txtVille";
+            txtVille.Size = new Size(149, 27);
+            txtVille.TabIndex = 0;
             // 
-            // textBox7
+            // txtCommune
             // 
-            textBox7.Location = new Point(104, 132);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(149, 27);
-            textBox7.TabIndex = 0;
+            txtCommune.Location = new Point(104, 132);
+            txtCommune.Name = "txtCommune";
+            txtCommune.Size = new Size(149, 27);
+            txtCommune.TabIndex = 0;
             // 
             // label7
             // 
@@ -243,19 +243,19 @@
             label7.TabIndex = 1;
             label7.Text = "Avenue";
             // 
-            // textBox6
+            // txtQuartier
             // 
-            textBox6.Location = new Point(104, 98);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(149, 27);
-            textBox6.TabIndex = 0;
+            txtQuartier.Location = new Point(104, 98);
+            txtQuartier.Name = "txtQuartier";
+            txtQuartier.Size = new Size(149, 27);
+            txtQuartier.TabIndex = 0;
             // 
-            // textBox5
+            // txtAvenue
             // 
-            textBox5.Location = new Point(104, 65);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(149, 27);
-            textBox5.TabIndex = 0;
+            txtAvenue.Location = new Point(104, 65);
+            txtAvenue.Name = "txtAvenue";
+            txtAvenue.Size = new Size(149, 27);
+            txtAvenue.TabIndex = 0;
             // 
             // label6
             // 
@@ -266,19 +266,19 @@
             label6.TabIndex = 1;
             label6.Text = "No.";
             // 
-            // textBox4
+            // txtNumero
             // 
-            textBox4.Location = new Point(104, 30);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(149, 27);
-            textBox4.TabIndex = 0;
+            txtNumero.Location = new Point(104, 30);
+            txtNumero.Name = "txtNumero";
+            txtNumero.Size = new Size(149, 27);
+            txtNumero.TabIndex = 0;
             // 
             // groupBox3
             // 
             groupBox3.Controls.Add(label12);
             groupBox3.Controls.Add(label11);
-            groupBox3.Controls.Add(textBox10);
-            groupBox3.Controls.Add(textBox9);
+            groupBox3.Controls.Add(txtNumeroTel);
+            groupBox3.Controls.Add(txtCode);
             groupBox3.Location = new Point(592, 119);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(265, 220);
@@ -304,33 +304,34 @@
             label11.TabIndex = 1;
             label11.Text = "Code";
             // 
-            // textBox10
+            // txtNumeroTel
             // 
-            textBox10.Location = new Point(110, 68);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(149, 27);
-            textBox10.TabIndex = 0;
+            txtNumeroTel.Location = new Point(110, 68);
+            txtNumeroTel.Name = "txtNumeroTel";
+            txtNumeroTel.Size = new Size(149, 27);
+            txtNumeroTel.TabIndex = 0;
             // 
-            // textBox9
+            // txtCode
             // 
-            textBox9.Location = new Point(110, 30);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(149, 27);
-            textBox9.TabIndex = 0;
+            txtCode.Location = new Point(110, 30);
+            txtCode.Name = "txtCode";
+            txtCode.Size = new Size(149, 27);
+            txtCode.TabIndex = 0;
             // 
             // sqlCommand1
             // 
             sqlCommand1.CommandTimeout = 30;
             sqlCommand1.EnableOptimizedParameterBinding = false;
             // 
-            // button1
+            // btnSaveClose
             // 
-            button1.Location = new Point(87, 368);
-            button1.Name = "button1";
-            button1.Size = new Size(181, 39);
-            button1.TabIndex = 3;
-            button1.Text = "Enregistrer et Fermer";
-            button1.UseVisualStyleBackColor = true;
+            btnSaveClose.Location = new Point(87, 368);
+            btnSaveClose.Name = "btnSaveClose";
+            btnSaveClose.Size = new Size(181, 39);
+            btnSaveClose.TabIndex = 3;
+            btnSaveClose.Text = "Enregistrer et Fermer";
+            btnSaveClose.UseVisualStyleBackColor = true;
+            btnSaveClose.Click += btnSaveClose_Click;
             // 
             // pictureBox2
             // 
@@ -342,14 +343,15 @@
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
             // 
-            // button2
+            // btnSave
             // 
-            button2.Location = new Point(341, 368);
-            button2.Name = "button2";
-            button2.Size = new Size(181, 39);
-            button2.TabIndex = 3;
-            button2.Text = "Enregistrer";
-            button2.UseVisualStyleBackColor = true;
+            btnSave.Location = new Point(341, 368);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(181, 39);
+            btnSave.TabIndex = 3;
+            btnSave.Text = "Enregistrer";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // pictureBox3
             // 
@@ -361,15 +363,16 @@
             pictureBox3.TabIndex = 4;
             pictureBox3.TabStop = false;
             // 
-            // button3
+            // btnClose
             // 
-            button3.BackColor = Color.Silver;
-            button3.Location = new Point(642, 369);
-            button3.Name = "button3";
-            button3.Size = new Size(181, 39);
-            button3.TabIndex = 3;
-            button3.Text = "Annuler";
-            button3.UseVisualStyleBackColor = false;
+            btnClose.BackColor = Color.Silver;
+            btnClose.Location = new Point(642, 369);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(181, 39);
+            btnClose.TabIndex = 3;
+            btnClose.Text = "Annuler";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
             // 
             // pictureBox4
             // 
@@ -387,11 +390,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(900, 476);
             Controls.Add(pictureBox4);
-            Controls.Add(button3);
+            Controls.Add(btnClose);
             Controls.Add(pictureBox3);
-            Controls.Add(button2);
+            Controls.Add(btnSave);
             Controls.Add(pictureBox2);
-            Controls.Add(button1);
+            Controls.Add(btnSaveClose);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -421,34 +424,34 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
-        private ComboBox comboBox1;
+        private ComboBox cbSexe;
         private Label label5;
         private Label label4;
         private Label label3;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txtPrenom;
+        private TextBox txtPost;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtNom;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
         private Label label10;
         private Label label9;
         private Label label8;
-        private TextBox textBox8;
-        private TextBox textBox7;
+        private TextBox txtVille;
+        private TextBox txtCommune;
         private Label label7;
-        private TextBox textBox6;
-        private TextBox textBox5;
+        private TextBox txtQuartier;
+        private TextBox txtAvenue;
         private Label label6;
-        private TextBox textBox4;
+        private TextBox txtNumero;
         private Label label12;
         private Label label11;
-        private TextBox textBox10;
-        private TextBox textBox9;
-        private Button button1;
+        private TextBox txtNumeroTel;
+        private TextBox txtCode;
+        private Button btnSaveClose;
         private PictureBox pictureBox2;
-        private Button button2;
+        private Button btnSave;
         private PictureBox pictureBox3;
-        private Button button3;
+        private Button btnClose;
         private PictureBox pictureBox4;
     }
 }

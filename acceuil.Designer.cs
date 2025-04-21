@@ -113,6 +113,7 @@
             quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
             quitterToolStripMenuItem.Size = new Size(224, 26);
             quitterToolStripMenuItem.Text = "&Quitter";
+            quitterToolStripMenuItem.Click += quitterToolStripMenuItem_Click;
             // 
             // etatDeSortieToolStripMenuItem
             // 

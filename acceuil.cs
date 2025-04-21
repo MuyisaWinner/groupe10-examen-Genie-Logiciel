@@ -41,7 +41,16 @@ namespace ProjetGroupe10
             connexion con = new connexion();
             con.MdiParent = this;
             con.Show();
-            
+
+        }
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           var result = MessageBox.Show("Voulez vous vraiment quitter ?", "Alerte", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result.Equals(DialogResult.Yes))
+            {
+                Application.Exit();
+            }
         }
     }
 }

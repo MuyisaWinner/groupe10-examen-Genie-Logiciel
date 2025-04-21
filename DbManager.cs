@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using Microsoft.Data.SqlClient;
 
 namespace ProjetGroupe10
@@ -20,7 +21,9 @@ namespace ProjetGroupe10
         private string connectionString(string user,string password) => string.Format("Server={0};Database={1};User Id={2};Password={3};TrustServerCertificate=True", [server, dbName, user, password]);
 
         // Constructeur privé
-        private DbManager() { }
+        private DbManager() {
+            
+        }
 
         public SqlConnection initialise()
         {
@@ -100,6 +103,21 @@ namespace ProjetGroupe10
         public bool IsConnected()
         {
             return connection.State == System.Data.ConnectionState.Open;
+        }
+
+        public static string randomID(int taille = 14)
+        {
+            const string caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            var random = new Random();
+            var sb = new StringBuilder(taille);
+
+            for (int i = 0; i < taille; i++)
+            {
+                int index = random.Next(caracteres.Length);
+                sb.Append(caracteres[index]);
+            }
+
+            return sb.ToString();
         }
     }
 }
