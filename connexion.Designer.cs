@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUserName = new TextBox();
+            txtPassword = new TextBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            button1 = new Button();
+            btn_connexion = new Button();
             label2 = new Label();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -54,21 +54,24 @@
             label1.Text = "Connexion";
             label1.Click += label1_Click;
             // 
-            // textBox1
+            // txtUserName
             // 
-            textBox1.Location = new Point(285, 238);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(222, 27);
-            textBox1.TabIndex = 1;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtUserName.Location = new Point(285, 238);
+            txtUserName.Name = "txtUserName";
+            txtUserName.PlaceholderText = "Nom d'utilisateur";
+            txtUserName.Size = new Size(222, 27);
+            txtUserName.TabIndex = 1;
+            txtUserName.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(285, 271);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(222, 27);
-            textBox2.TabIndex = 1;
-            textBox2.TextChanged += textBox1_TextChanged;
+            txtPassword.Location = new Point(285, 271);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.PlaceholderText = "Votre mot de passe";
+            txtPassword.Size = new Size(222, 27);
+            txtPassword.TabIndex = 1;
+            txtPassword.TextChanged += textBox1_TextChanged;
             // 
             // pictureBox1
             // 
@@ -90,15 +93,16 @@
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
-            // button1
+            // btn_connexion
             // 
-            button1.Font = new Font("Montserrat", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(325, 314);
-            button1.Name = "button1";
-            button1.Size = new Size(182, 29);
-            button1.TabIndex = 3;
-            button1.Text = "Connexion";
-            button1.UseVisualStyleBackColor = true;
+            btn_connexion.Font = new Font("Montserrat", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_connexion.Location = new Point(325, 314);
+            btn_connexion.Name = "btn_connexion";
+            btn_connexion.Size = new Size(182, 29);
+            btn_connexion.TabIndex = 3;
+            btn_connexion.Text = "Connexion";
+            btn_connexion.UseVisualStyleBackColor = true;
+            btn_connexion.Click += btn_connexion_Click;
             // 
             // label2
             // 
@@ -136,13 +140,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label2);
-            Controls.Add(button1);
+            Controls.Add(btn_connexion);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUserName);
             Controls.Add(label1);
             Name = "connexion";
             Text = "Connexion";
@@ -158,11 +162,11 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUserName;
+        private TextBox txtPassword;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button1;
+        private Button btn_connexion;
         private Label label2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;

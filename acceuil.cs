@@ -16,5 +16,32 @@ namespace ProjetGroupe10
         {
             InitializeComponent();
         }
+
+        private void parametreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ajouterUnePersonneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ajouter_personne frm = new ajouter_personne();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void aProposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InfosPage page = new InfosPage();
+            page.MdiParent = this;
+            page.Show();
+        }
+
+        private void connexionBDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            connexion con = new connexion();
+            con.MdiParent = this;
+            con.Show();
+            
+        }
     }
 }

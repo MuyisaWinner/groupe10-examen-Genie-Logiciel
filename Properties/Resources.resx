@@ -118,40 +118,61 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="decision_18967758" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\decision_18967758.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logo_isig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_isig.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pen_10977638" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pen_10977638.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chat_5251109" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chat_5251109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu_1990256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_1990256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete_3694433" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete_3694433.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="key_6338885" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key_6338885.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="location_16244249" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\location_16244249.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo_isig" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_isig.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="check_14025690" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\check_14025690.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male_9634138" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male_9634138.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_17216753" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_17216753.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pen_10977638" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pen_10977638.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="password_9482478" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\password_9482478.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="socket_18080595" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\socket_18080595.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_5251109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat_5251109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paper_15388297" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper_15388297.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check_14025690" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check_14025690.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="link_17121507" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\link_17121507.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="profile_6915911" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile_6915911.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="close_17216753" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_17216753.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key_6338885" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key_6338885.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male_9634138" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male_9634138.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report_5251307" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report_5251307.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add_8514918" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_8514918.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="decision_18967758" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\decision_18967758.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_11712819" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_11712819.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

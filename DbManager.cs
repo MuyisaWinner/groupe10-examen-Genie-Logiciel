@@ -8,6 +8,7 @@ namespace ProjetGroupe10
         public string user;
         public string password;
         private string server = "DESKTOP-2O9D8F6";
+        private string dbName = "groupe10";
         // Singleton
         private static readonly Lazy<DbManager> instance = new Lazy<DbManager>(() => new DbManager());
 
@@ -16,21 +17,29 @@ namespace ProjetGroupe10
         private SqlConnection connection;
 
         // Chaine de connexion à personnaliser
-        private string connectionString(string user,string password) => string.Format("Server={0};Database=TA_BASE;User Id={1};Password={2};", [server,user, password]);
+        private string connectionString(string user,string password) => string.Format("Server={0};Database={1};User Id={2};Password={3};TrustServerCertificate=True", [server, dbName, user, password]);
 
         // Constructeur privé
-        private DbManager()
-        {
-            if (user != null && password != null)
-            {
-                connection = new SqlConnection(connectionString(user, password);
-            }
-            else
-            {
-                throw new Exception("Verifier vos identifiant");
-            }
+        private DbManager() { }
 
+        public SqlConnection initialise()
+        {
+           
+                if (user != null && password != null)
+                {
+                    SqlConnection sqlConnection = new SqlConnection(connectionString(user, password));
+
+                    connection = sqlConnection;
+                    return connection;
+                }
+                else
+                {
+                    throw new Exception("Verifier vos identifiant");
+                }
+            
         }
+
+        
 
         // Accès à l'instance
         public static DbManager Instance => instance.Value;
@@ -39,7 +48,7 @@ namespace ProjetGroupe10
         public SqlConnection Connection => connection;
 
         // Connexion à la base
-        public void Connect()
+        public bool Connect()
         {
             if (connection.State == System.Data.ConnectionState.Closed)
             {
@@ -47,21 +56,43 @@ namespace ProjetGroupe10
                 {
                     connection.Open();
                     Console.WriteLine("Connexion à la base de données réussie.");
+                    return true;
                 }
                 catch (SqlException ex)
                 {
                     Console.WriteLine($"Erreur lors de la connexion : {ex.Message}");
+                    MessageBox.Show(ex.Message
+                        , "Alerte", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Clipboard.SetText(ex.Message);
+                    return false;
                 }
+            }
+            else
+            {
+                return true;
             }
         }
 
         // Déconnexion
-        public void Disconnect()
+        public bool Disconnect()
         {
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                connection.Close();
-                Console.WriteLine("Connexion fermée.");
+                try
+                {
+                    connection.Close();
+                    Console.WriteLine("Connexion fermée.");
+                    return true;
+                }
+                catch (SqlException ex) {
+                    connection.Close();
+                    Console.WriteLine("Connexion fermée.");
+                    return true;
+                }
+            }
+            else
+            {
+                return true;
             }
         }
 

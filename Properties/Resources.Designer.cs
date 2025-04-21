@@ -123,9 +123,39 @@ namespace ProjetGroupe10.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap info_11712819 {
+            get {
+                object obj = ResourceManager.GetObject("info_11712819", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap key_6338885 {
             get {
                 object obj = ResourceManager.GetObject("key_6338885", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap link_17121507 {
+            get {
+                object obj = ResourceManager.GetObject("link_17121507", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap location_16244249 {
+            get {
+                object obj = ResourceManager.GetObject("location_16244249", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +176,26 @@ namespace ProjetGroupe10.Properties {
         internal static System.Drawing.Bitmap male_9634138 {
             get {
                 object obj = ResourceManager.GetObject("male_9634138", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menu_1990256 {
+            get {
+                object obj = ResourceManager.GetObject("menu_1990256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paper_15388297 {
+            get {
+                object obj = ResourceManager.GetObject("paper_15388297", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +226,26 @@ namespace ProjetGroupe10.Properties {
         internal static System.Drawing.Bitmap profile_6915911 {
             get {
                 object obj = ResourceManager.GetObject("profile_6915911", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report_5251307 {
+            get {
+                object obj = ResourceManager.GetObject("report_5251307", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap socket_18080595 {
+            get {
+                object obj = ResourceManager.GetObject("socket_18080595", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
