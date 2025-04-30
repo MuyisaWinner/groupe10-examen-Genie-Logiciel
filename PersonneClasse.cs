@@ -13,6 +13,9 @@ namespace ProjetGroupe10
         public string prenom { get; set; }
         public string sexe { get; set; }
 
+       public AdresseClasse adresse { get; set; }
+        public TelephoneClasse telephone { get; set; }
+
         SqlConnection con => DbManager.Instance.Connection;
         string tableName => "personnesTable"; 
 
@@ -48,6 +51,8 @@ namespace ProjetGroupe10
             }
         }
 
+
+
         public List<PersonneClasse> GetAll()
         {
             var personnes = new List<PersonneClasse>();
@@ -66,7 +71,10 @@ namespace ProjetGroupe10
                             post = reader.GetString(2),
                             prenom = reader.GetString(3),
                             sexe = reader.GetString(4)
+
                         };
+                        p.adresse = new AdresseClasse().GetByPerson(p.id);
+                        p.telephone = new TelephoneClasse().GetByPerson(p.id);
 
                         personnes.Add(p);
                     }
@@ -82,6 +90,10 @@ namespace ProjetGroupe10
 
         public bool Delete()
         {
+            if(id.Length == 0)
+            {
+                return true;
+            }
             try
             {
                 var query = "DELETE FROM " + tableName + " WHERE id = @id";
@@ -98,6 +110,10 @@ namespace ProjetGroupe10
                 return false;
             }
         }
+
+     
+
+
     }
 }
 

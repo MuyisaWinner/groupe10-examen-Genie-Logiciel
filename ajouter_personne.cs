@@ -10,11 +10,37 @@ using System.Windows.Forms;
 
 namespace ProjetGroupe10
 {
+
     public partial class ajouter_personne : Form
     {
+        private PersonneClasse selected;
+
+        void initialise()
+        {
+            if (selected != null)
+            {
+                var adresse = selected.adresse;
+                var telephone = selected.telephone;
+                rdMasculin.Checked = selected.sexe == "M";
+                rdFeminin.Checked = selected.sexe == "F";
+                txtNom.Text = selected.nom;
+                txtPost.Text = selected.post;
+                txtPrenom.Text = selected.prenom;
+                txtNumero.Text = adresse.numero;
+                txtAvenue.Text = adresse.avenue;
+                txtQuartier.Text = adresse.quartier;
+                txtCommune.Text = adresse.commune;
+                txtVille.Text = adresse.ville;
+                txtCode.Text = telephone.code;
+                txtNumeroTel.Text = telephone.numero; ;
+            }
+
+        }
         public ajouter_personne()
         {
+
             InitializeComponent();
+            this.selected = DbManager.selectedPerson;
         }
 
         private void btnSaveClose_Click(object sender, EventArgs e)
@@ -25,17 +51,17 @@ namespace ProjetGroupe10
         }
         void add()
         {
-            //CREATIO DE L OBJECT PERSONNE
+            //CREATIOn DE L OBJECT PERSONNE
             var person = new PersonneClasse();
-            person.id = DbManager.randomID();
+            person.id = selected != null ? selected.id : DbManager.randomID();
             person.nom = txtNom.Text;
             person.post = txtPost.Text;
             person.prenom = txtPrenom.Text;
-            person.sexe = cbSexe.Items[cbSexe.SelectedIndex].ToString();
+            person.sexe = rdMasculin.Enabled ? "M" : "F";
 
             //CREATION DE L OBJECT ADRESSE
             var adresse = new AdresseClasse();
-            adresse.id = DbManager.randomID();
+            adresse.id = selected != null ? selected.adresse.id : DbManager.randomID();
             adresse.numero = txtNumero.Text;
             adresse.avenue = txtAvenue.Text;
             adresse.quartier = txtQuartier.Text;
@@ -46,7 +72,7 @@ namespace ProjetGroupe10
             //CREATION DE L OBJECT TELEPHONE
 
             var telephone = new TelephoneClasse();
-            telephone.id = DbManager.randomID();
+            telephone.id = selected != null ? selected.telephone.id : DbManager.randomID();
             telephone.code = txtCode.Text;
             telephone.numero = txtNumeroTel.Text;
             telephone.person = person.id;
@@ -76,6 +102,11 @@ namespace ProjetGroupe10
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ajouter_personne_Load(object sender, EventArgs e)
+        {
+            initialise(); 
         }
     }
 

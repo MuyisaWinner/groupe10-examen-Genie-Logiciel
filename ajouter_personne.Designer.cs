@@ -31,7 +31,6 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             groupBox1 = new GroupBox();
-            cbSexe = new ComboBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -62,6 +61,8 @@
             pictureBox3 = new PictureBox();
             btnClose = new Button();
             pictureBox4 = new PictureBox();
+            rdMasculin = new RadioButton();
+            rdFeminin = new RadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -93,7 +94,8 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(cbSexe);
+            groupBox1.Controls.Add(rdFeminin);
+            groupBox1.Controls.Add(rdMasculin);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
@@ -107,15 +109,6 @@
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Identité";
-            // 
-            // cbSexe
-            // 
-            cbSexe.FormattingEnabled = true;
-            cbSexe.Items.AddRange(new object[] { "MASCULIN", "FEMININ" });
-            cbSexe.Location = new Point(95, 127);
-            cbSexe.Name = "cbSexe";
-            cbSexe.Size = new Size(147, 28);
-            cbSexe.TabIndex = 2;
             // 
             // label5
             // 
@@ -384,6 +377,28 @@
             pictureBox4.TabIndex = 4;
             pictureBox4.TabStop = false;
             // 
+            // rdMasculin
+            // 
+            rdMasculin.AutoSize = true;
+            rdMasculin.Checked = true;
+            rdMasculin.Location = new Point(95, 135);
+            rdMasculin.Name = "rdMasculin";
+            rdMasculin.Size = new Size(88, 24);
+            rdMasculin.TabIndex = 3;
+            rdMasculin.TabStop = true;
+            rdMasculin.Text = "Masculin";
+            rdMasculin.UseVisualStyleBackColor = true;
+            // 
+            // rdFeminin
+            // 
+            rdFeminin.AutoSize = true;
+            rdFeminin.Location = new Point(95, 169);
+            rdFeminin.Name = "rdFeminin";
+            rdFeminin.Size = new Size(82, 24);
+            rdFeminin.TabIndex = 4;
+            rdFeminin.Text = "Feminin";
+            rdFeminin.UseVisualStyleBackColor = true;
+            // 
             // ajouter_personne
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -403,6 +418,7 @@
             Name = "ajouter_personne";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Nouvelle Personne";
+            Load += ajouter_personne_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -424,7 +440,6 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
-        private ComboBox cbSexe;
         private Label label5;
         private Label label4;
         private Label label3;
@@ -453,5 +468,7 @@
         private PictureBox pictureBox3;
         private Button btnClose;
         private PictureBox pictureBox4;
+        private RadioButton rdFeminin;
+        private RadioButton rdMasculin;
     }
 }

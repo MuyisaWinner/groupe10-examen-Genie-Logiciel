@@ -74,3 +74,4 @@ E:\ISIG\GENIE LOGICIEL\EXAM\ProjetGroupe10\obj\Debug\net8.0-windows\ProjetGroupe
 E:\ISIG\GENIE LOGICIEL\EXAM\ProjetGroupe10\obj\Debug\net8.0-windows\ProjetGroupe10.personnes_list.resources
 E:\ISIG\GENIE LOGICIEL\EXAM\ProjetGroupe10\obj\Debug\net8.0-windows\ProjetGroupe10.sourcelink.json
 E:\ISIG\GENIE LOGICIEL\EXAM\ProjetGroupe10\obj\Debug\net8.0-windows\ProjetGroupe10.InfosPage.resources
+E:\ISIG\GENIE LOGICIEL\EXAM\ProjetGroupe10\obj\Debug\net8.0-windows\ProjetGroupe10.etat_de_sortie.resources

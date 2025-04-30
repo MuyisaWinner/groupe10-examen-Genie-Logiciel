@@ -91,6 +91,10 @@ namespace ProjetGroupe10
 
         public bool Delete()
         {
+            if(id.Length == 0)
+            {
+                return true;
+            }
             try
             {
                 var query = "DELETE FROM " + tableName + " WHERE id = @id";
@@ -107,6 +111,49 @@ namespace ProjetGroupe10
                 return false;
             }
         }
+
+        public AdresseClasse GetByPerson(string person)
+        {
+            AdresseClasse adresse = new AdresseClasse(); // mieux null que vide directement
+
+            try
+            {
+                DbManager db = DbManager.Instance;
+                using (var newCon = new SqlConnection(db.connectionString(db.user, db.password)))
+                {
+                    newCon.Open();
+                    var query = "SELECT * FROM " + tableName + " WHERE person = @person";
+                    using (var cmd = new SqlCommand(query, newCon))
+                    {
+                        cmd.Parameters.AddWithValue("@person", person);
+
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                adresse = new AdresseClasse
+                                {
+                                    id = reader.GetString(0),
+                                    numero = reader.GetString(1),
+                                    avenue = reader.GetString(2),
+                                    quartier = reader.GetString(3),
+                                    commune = reader.GetString(4),
+                                    ville = reader.GetString(5),
+                                    person = reader.GetString(6)
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de lecture : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            return adresse;
+        }
+
     }
 }
 

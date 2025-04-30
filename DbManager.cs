@@ -18,13 +18,13 @@ namespace ProjetGroupe10
         private SqlConnection connection;
 
         // Chaine de connexion à personnaliser
-        private string connectionString(string user,string password) => string.Format("Server={0};Database={1};User Id={2};Password={3};TrustServerCertificate=True", [server, dbName, user, password]);
+        public string connectionString(string user,string password) => string.Format("Server={0};Database={1};User Id={2};Password={3};TrustServerCertificate=True", [server, dbName, user, password]);
 
         // Constructeur privé
-        private DbManager() {
+        public DbManager() {
             
         }
-
+        public static PersonneClasse selectedPerson = null;
         public SqlConnection initialise()
         {
            
@@ -102,7 +102,22 @@ namespace ProjetGroupe10
         // Vérifie si la connexion est ouverte
         public bool IsConnected()
         {
-            return connection.State == System.Data.ConnectionState.Open;
+            try
+            {
+                try
+                {
+                    initialise();
+                }
+                catch (Exception ex)
+                {
+                    return false;
+                }
+                    
+                return connection.State == System.Data.ConnectionState.Open;
+            }
+            catch (SqlException ex) {
+                return false;
+            }
         }
 
         public static string randomID(int taille = 14)

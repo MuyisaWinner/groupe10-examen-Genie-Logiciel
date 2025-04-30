@@ -32,6 +32,12 @@
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -39,11 +45,11 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Montserrat", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(485, 124);
+            label3.Location = new Point(373, 133);
             label3.Name = "label3";
-            label3.Size = new Size(226, 24);
+            label3.Size = new Size(324, 24);
             label3.TabIndex = 8;
-            label3.Text = "1. TSONGO MUYISA WINNER";
+            label3.Text = "1. TSONGO MUYISA WINNER (LIC3 LIAGE)";
             // 
             // label2
             // 
@@ -75,11 +81,77 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Montserrat", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(373, 157);
+            label4.Name = "label4";
+            label4.Size = new Size(377, 24);
+            label4.TabIndex = 8;
+            label4.Text = "2. SHEKINAH MAPENDANO BANGA (LIC3 LIAGE)";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Montserrat", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(373, 181);
+            label5.Name = "label5";
+            label5.Size = new Size(295, 24);
+            label5.TabIndex = 8;
+            label5.Text = "3. VUSIKE KAKULE KIMIMBI (LIC4 LSI)";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Montserrat", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(373, 205);
+            label6.Name = "label6";
+            label6.Size = new Size(228, 24);
+            label6.TabIndex = 8;
+            label6.Text = "4. TCHIKO KWINJA CYNTHIA";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Montserrat", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(373, 229);
+            label7.Name = "label7";
+            label7.Size = new Size(217, 24);
+            label7.TabIndex = 8;
+            label7.Text = "5. TUAMINI SEBABI DANIEL";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Montserrat", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(373, 254);
+            label8.Name = "label8";
+            label8.Size = new Size(243, 24);
+            label8.TabIndex = 8;
+            label8.Text = "6. USHINDI KASONGO PASCAL";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Montserrat", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Location = new Point(373, 278);
+            label9.Name = "label9";
+            label9.Size = new Size(237, 24);
+            label9.TabIndex = 8;
+            label9.Text = "7. ZAWADI SHAMAVU DIANNE";
+            // 
             // InfosPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -97,5 +169,11 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
     }
 }

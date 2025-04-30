@@ -243,6 +243,16 @@ namespace ProjetGroupe10.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rotate_right_7883567 {
+            get {
+                object obj = ResourceManager.GetObject("rotate-right_7883567", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap socket_18080595 {
             get {
                 object obj = ResourceManager.GetObject("socket_18080595", resourceCulture);

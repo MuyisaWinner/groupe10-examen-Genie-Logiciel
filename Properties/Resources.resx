@@ -133,23 +133,20 @@
   <data name="pen_10977638" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pen_10977638.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="password_9482478" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password_9482478.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="socket_18080595" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\socket_18080595.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chat_5251109" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chat_5251109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="paper_15388297" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\paper_15388297.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="check_14025690" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\check_14025690.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="link_17121507" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\link_17121507.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="decision_18967758" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\decision_18967758.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="profile_6915911" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile_6915911.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,16 +160,22 @@
   <data name="male_9634138" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male_9634138.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="info_11712819" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_11712819.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password_9482478" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password_9482478.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="report_5251307" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\report_5251307.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add_8514918" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_8514918.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="decision_18967758" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\decision_18967758.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paper_15388297" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper_15388297.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="info_11712819" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info_11712819.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rotate-right_7883567" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rotate-right_7883567.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

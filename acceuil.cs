@@ -46,11 +46,45 @@ namespace ProjetGroupe10
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           var result = MessageBox.Show("Voulez vous vraiment quitter ?", "Alerte", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            var result = MessageBox.Show("Voulez vous vraiment quitter ?", "Alerte", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result.Equals(DialogResult.Yes))
             {
                 Application.Exit();
             }
+        }
+
+        private void listeDesPersonnesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            personnes_list frm = new personnes_list();
+            frm.MdiParent = this;
+            frm.Show();
+
+        }
+
+        private void acceuil_Load(object sender, EventArgs e)
+        {
+            var connected = DbManager.Instance.IsConnected();
+            if (!connected)
+            {
+                connexion con = new connexion();
+                con.MdiParent = this;
+                con.Show();
+
+            }
+
+        }
+
+        private void toutesLesPersonnesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            etat_de_sortie con = new etat_de_sortie();
+            con.MdiParent = this;
+            con.Show();
+
+        }
+
+        private void etatDeSortieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

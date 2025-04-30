@@ -10,6 +10,9 @@
     <Compile Update="connexion.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="etat_de_sortie.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="InfosPage.cs">
       <SubType>Form</SubType>
     </Compile>

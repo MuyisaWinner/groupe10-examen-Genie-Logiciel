@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -77,6 +78,10 @@ namespace ProjetGroupe10
         public bool delete()
         {
             try {
+                if(id.Length == 0)
+                {
+                    return true;
+                }
                 var query = "DELETE FROM " + tableName + " WHERE id = @id";
                 using (var cmd = new SqlCommand(query, con))
                 {
@@ -93,7 +98,49 @@ namespace ProjetGroupe10
             
         }
 
+        public TelephoneClasse GetByPerson(string person)
+        {
+            TelephoneClasse telephone = new TelephoneClasse();
+
+            try
+            {
+                DbManager db =  DbManager.Instance;
+                using (var newCon = new SqlConnection(db.connectionString(db.user, db.password))) // nouvelle connexion
+                {
+                    newCon.Open();
+                    var query = "SELECT * FROM " + tableName + " WHERE person = @person";
+                    using (var cmd = new SqlCommand(query, newCon))
+                    {
+                        cmd.Parameters.AddWithValue("@person", person);
+
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                telephone = new TelephoneClasse
+                                {
+                                    id = reader.GetString(0),
+                                    code = reader.GetString(1),
+                                    numero = reader.GetString(2),
+                                    person = reader.GetString(3)
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de lecture : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            return telephone;
+        }
+
+
+
     }
+
 
 
 }

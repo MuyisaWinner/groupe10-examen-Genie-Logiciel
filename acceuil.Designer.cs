@@ -41,6 +41,7 @@
             toutesLesPersonnesToolStripMenuItem = new ToolStripMenuItem();
             personnesAvecAdresseToolStripMenuItem = new ToolStripMenuItem();
             personnesAvecNumeroToolStripMenuItem = new ToolStripMenuItem();
+            paramètreToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             // 
             aProposToolStripMenuItem.Image = Properties.Resources.info_11712819;
             aProposToolStripMenuItem.Name = "aProposToolStripMenuItem";
-            aProposToolStripMenuItem.Size = new Size(153, 26);
+            aProposToolStripMenuItem.Size = new Size(224, 26);
             aProposToolStripMenuItem.Text = "&A propos";
             aProposToolStripMenuItem.Click += aProposToolStripMenuItem_Click;
             // 
@@ -90,10 +91,11 @@
             listeDesPersonnesToolStripMenuItem.Name = "listeDesPersonnesToolStripMenuItem";
             listeDesPersonnesToolStripMenuItem.Size = new Size(234, 26);
             listeDesPersonnesToolStripMenuItem.Text = "Liste des personnes";
+            listeDesPersonnesToolStripMenuItem.Click += listeDesPersonnesToolStripMenuItem_Click;
             // 
             // parametreToolStripMenuItem
             // 
-            parametreToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { connexionBDToolStripMenuItem, quitterToolStripMenuItem });
+            parametreToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { connexionBDToolStripMenuItem, quitterToolStripMenuItem, paramètreToolStripMenuItem });
             parametreToolStripMenuItem.Name = "parametreToolStripMenuItem";
             parametreToolStripMenuItem.Size = new Size(90, 24);
             parametreToolStripMenuItem.Text = "P&aramètre";
@@ -121,6 +123,7 @@
             etatDeSortieToolStripMenuItem.Name = "etatDeSortieToolStripMenuItem";
             etatDeSortieToolStripMenuItem.Size = new Size(111, 24);
             etatDeSortieToolStripMenuItem.Text = "E&tat de sortie";
+            etatDeSortieToolStripMenuItem.Click += etatDeSortieToolStripMenuItem_Click;
             // 
             // toutesLesPersonnesToolStripMenuItem
             // 
@@ -128,6 +131,7 @@
             toutesLesPersonnesToolStripMenuItem.Name = "toutesLesPersonnesToolStripMenuItem";
             toutesLesPersonnesToolStripMenuItem.Size = new Size(246, 26);
             toutesLesPersonnesToolStripMenuItem.Text = "Toutes les personnes";
+            toutesLesPersonnesToolStripMenuItem.Click += toutesLesPersonnesToolStripMenuItem_Click;
             // 
             // personnesAvecAdresseToolStripMenuItem
             // 
@@ -143,6 +147,12 @@
             personnesAvecNumeroToolStripMenuItem.Size = new Size(246, 26);
             personnesAvecNumeroToolStripMenuItem.Text = "Personnes avec numero";
             // 
+            // paramètreToolStripMenuItem
+            // 
+            paramètreToolStripMenuItem.Name = "paramètreToolStripMenuItem";
+            paramètreToolStripMenuItem.Size = new Size(224, 26);
+            paramètreToolStripMenuItem.Text = "P&aramètre";
+            // 
             // acceuil
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -154,6 +164,7 @@
             Name = "acceuil";
             Text = "Acceuil";
             WindowState = FormWindowState.Maximized;
+            Load += acceuil_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -175,5 +186,6 @@
         private ToolStripMenuItem personnesAvecAdresseToolStripMenuItem;
         private ToolStripMenuItem personnesAvecNumeroToolStripMenuItem;
         private ToolStripMenuItem aProposToolStripMenuItem;
+        private ToolStripMenuItem paramètreToolStripMenuItem;
     }
 }
