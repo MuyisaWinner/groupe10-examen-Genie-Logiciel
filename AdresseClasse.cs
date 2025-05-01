@@ -54,6 +54,9 @@ namespace ProjetGroupe10
             }
         }
 
+
+        
+
         public List<AdresseClasse> GetAll()
         {
             var adresses = new List<AdresseClasse>();
@@ -89,6 +92,10 @@ namespace ProjetGroupe10
             return adresses;
         }
 
+
+
+        
+
         public bool Delete()
         {
             if(id.Length == 0)
@@ -111,6 +118,10 @@ namespace ProjetGroupe10
                 return false;
             }
         }
+
+
+
+        
 
         public AdresseClasse GetByPerson(string person)
         {
