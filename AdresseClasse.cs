@@ -158,11 +158,12 @@ namespace ProjetGroupe10
                 }
             }
             catch (Exception ex)
-            {
-                MessageBox.Show("Erreur de lecture : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+{
+    var message = $"Erreur lors de la lecture des données : {ex.Message}";
+    MessageBox.Show(message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+}
 
-            return adresse;
+return adresse;
         }
 
     }
